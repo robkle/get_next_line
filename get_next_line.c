@@ -6,7 +6,7 @@
 /*   By: rklein <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/04 10:43:46 by rklein            #+#    #+#             */
-/*   Updated: 2019/11/11 12:07:49 by rklein           ###   ########.fr       */
+/*   Updated: 2019/11/11 14:05:27 by rklein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,10 +51,10 @@ int	get_next_line(const int fd, char **line)
 {
 	int			rv;
 	char		buffer[BUFF_SIZE + 1];
-	static char	*str[FD_MAX + 1];
+	static char	*str[FD_MAX];
 	char		*tmp;
 
-	if (fd < 0 || line == NULL || fd >= FD_MAX)
+	if (fd < 0 || line == NULL)
 		return (-1);
 	while ((rv = read(fd, buffer, BUFF_SIZE)) > 0)
 	{
