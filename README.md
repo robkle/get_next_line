@@ -9,3 +9,7 @@ The return value can be 1, 0 or -1 depending on whether a line has been read, th
 When implemented in a loop it will read the text line by line until the end of file is reached.<br />
 The function is able to handle multiple file descriptors.
 
+### Notes:
+This project is part of my studies at Hive Helsinki. It was tested by 3 fellow Hive students as well as an automated evaluation system.
+
+
