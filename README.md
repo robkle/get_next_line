@@ -1,5 +1,5 @@
 # get_next_line
-C function that allows you to read a line, ending with a newline character (or EOF), from a file descriptor.
+C function that allows you to read a line ending with a newline character (or EOF), from a file descriptor.
 
 ## Usage<br />
 int	get_next_line(const int fd, char **line)<br />
